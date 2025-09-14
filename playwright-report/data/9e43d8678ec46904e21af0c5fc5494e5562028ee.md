@@ -1,0 +1,348 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e6] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+      - img [ref=e8] [cursor=pointer]
+    - generic [ref=e12] [cursor=pointer]:
+      - button "Open issues overlay" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14] [cursor=pointer]:
+          - generic [ref=e15] [cursor=pointer]: "0"
+          - generic [ref=e16] [cursor=pointer]: "1"
+        - generic [ref=e17] [cursor=pointer]: Issue
+      - button "Collapse issues badge" [ref=e18] [cursor=pointer]:
+        - img [ref=e19] [cursor=pointer]
+  - navigation [ref=e21]:
+    - generic [ref=e23]:
+      - link [ref=e24] [cursor=pointer]:
+        - /url: /
+        - img [ref=e26] [cursor=pointer]
+      - button [ref=e29]:
+        - img [ref=e30]
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e36]:
+        - heading "Tu Oasis de Relajación y Bienestar" [level=1] [ref=e37]:
+          - text: Tu Oasis de
+          - generic [ref=e38]: Relajación
+          - text: y Bienestar
+        - paragraph [ref=e39]:
+          - text: Descubre el equilibrio perfecto entre cuerpo y mente con nuestros
+          - strong [ref=e40]: masajes terapéuticos profesionales
+          - text: . Más de 10 años cuidando tu bienestar en un ambiente de tranquilidad absoluta.
+        - generic [ref=e41]:
+          - link "🗓️ Reservar Mi Cita" [ref=e42] [cursor=pointer]:
+            - /url: /reservas
+          - link "📋 Ver Servicios" [ref=e43] [cursor=pointer]:
+            - /url: /servicios
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e47]: 🧘‍♀️
+            - heading "Relajación Profunda" [level=3] [ref=e48]
+            - paragraph [ref=e49]: Libera el estrés y encuentra tu paz interior
+          - generic [ref=e50]:
+            - generic [ref=e52]: 💆‍♂️
+            - heading "Terapia Profesional" [level=3] [ref=e53]
+            - paragraph [ref=e54]: Masajistas certificados con años de experiencia
+          - generic [ref=e55]:
+            - generic [ref=e57]: 🌿
+            - heading "Ambiente Natural" [level=3] [ref=e58]
+            - paragraph [ref=e59]: Espacio diseñado para tu máximo confort
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - heading "Nuestros Servicios de Masajes" [level=2] [ref=e63]
+          - paragraph [ref=e64]:
+            - text: Ofrecemos una amplia gama de
+            - strong [ref=e65]: tratamientos terapéuticos
+            - text: diseñados para restaurar tu energía y promover tu
+            - emphasis [ref=e66]: bienestar integral
+            - text: . Cada sesión está personalizada según tus necesidades específicas.
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - heading "Masaje de Piedras Calientes" [level=3] [ref=e70]
+              - paragraph [ref=e71]: 90 minutos
+            - generic [ref=e72]:
+              - paragraph [ref=e73]: Relajante masaje con piedras volcánicas calientes.
+              - generic [ref=e74]:
+                - generic [ref=e76]: $140
+                - link "Reservar" [ref=e77] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjbglxw0001tdqohxixd7b0
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - heading "Masaje de Piedras Calientes" [level=3] [ref=e80]
+              - paragraph [ref=e81]: 90 minutos
+            - generic [ref=e82]:
+              - paragraph [ref=e83]: Relajante masaje con piedras volcánicas calientes.
+              - generic [ref=e84]:
+                - generic [ref=e86]: $140
+                - link "Reservar" [ref=e87] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjc4s430000tdass6rd6tb8
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - heading "Masaje Deportivo" [level=3] [ref=e90]
+              - paragraph [ref=e91]: 75 minutos
+            - generic [ref=e92]:
+              - paragraph [ref=e93]: Masaje especializado para deportistas, ideal para recuperación muscular.
+              - generic [ref=e94]:
+                - generic [ref=e96]: $100
+                - link "Reservar" [ref=e97] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjc4s4e0002tdas3kumixcj
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - heading "Masaje Deportivo" [level=3] [ref=e100]
+              - paragraph [ref=e101]: 75 minutos
+            - generic [ref=e102]:
+              - paragraph [ref=e103]: Masaje especializado para deportistas, ideal para recuperación muscular.
+              - generic [ref=e104]:
+                - generic [ref=e106]: $100
+                - link "Reservar" [ref=e107] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjbglxo0000tdqo8lr7oa9x
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - heading "Masaje Relajante" [level=3] [ref=e110]
+              - paragraph [ref=e111]: 60 minutos
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: Masaje suave y relajante para aliviar el estrés y la tensión muscular.
+              - generic [ref=e114]:
+                - generic [ref=e116]: $80
+                - link "Reservar" [ref=e117] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjbglxx0002tdqogs1q4q7k
+          - generic [ref=e118]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: 🎯
+              - generic [ref=e122]: 20% OFF
+            - generic [ref=e123]:
+              - heading "Masaje Relajante" [level=3] [ref=e124]
+              - paragraph [ref=e125]: 60 minutos
+            - generic [ref=e126]:
+              - paragraph [ref=e127]: Masaje suave y relajante para aliviar el estrés y la tensión muscular.
+              - generic [ref=e128]:
+                - generic [ref=e129]:
+                  - generic [ref=e130]: $80
+                  - generic [ref=e131]: $64
+                - link "Reservar" [ref=e132] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjc4s4f0003tdasdz0vjntb
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - heading "Masaje Terapéutico" [level=3] [ref=e135]
+              - paragraph [ref=e136]: 90 minutos
+            - generic [ref=e137]:
+              - paragraph [ref=e138]: Masaje profundo para tratar dolores musculares y contracturas.
+              - generic [ref=e139]:
+                - generic [ref=e141]: $120
+                - link "Reservar" [ref=e142] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjbgly00003tdqo7vya8axj
+          - generic [ref=e143]:
+            - generic [ref=e145]:
+              - generic [ref=e146]: 🎯
+              - generic [ref=e147]: 20% OFF
+            - generic [ref=e148]:
+              - heading "Masaje Terapéutico" [level=3] [ref=e149]
+              - paragraph [ref=e150]: 90 minutos
+            - generic [ref=e151]:
+              - paragraph [ref=e152]: Masaje profundo para tratar dolores musculares y contracturas.
+              - generic [ref=e153]:
+                - generic [ref=e154]:
+                  - generic [ref=e155]: $120
+                  - generic [ref=e156]: $96
+                - link "Reservar" [ref=e157] [cursor=pointer]:
+                  - /url: /reservas?servicio=cmfjc4s4b0001tdasg47u75wq
+        - link "Ver Todos los Servicios" [ref=e159] [cursor=pointer]:
+          - /url: /servicios
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - heading "Lo Que Dicen Nuestros Clientes" [level=2] [ref=e163]
+          - paragraph [ref=e164]: La satisfacción de nuestros clientes es nuestra mayor recompensa. Lee las experiencias reales de quienes han confiado en nosotros.
+        - generic [ref=e165]:
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - img [ref=e169]
+              - img [ref=e171]
+              - img [ref=e173]
+              - img [ref=e175]
+              - img [ref=e177]
+            - blockquote [ref=e179]: "\"Increíble experiencia. El masaje terapéutico me ayudó muchísimo con mis dolores de espalda. El ambiente es muy relajante y profesional.\""
+            - generic [ref=e180]:
+              - paragraph [ref=e181]: María González
+              - paragraph [ref=e182]: Masaje Terapéutico
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - img [ref=e186]
+              - img [ref=e188]
+              - img [ref=e190]
+              - img [ref=e192]
+              - img [ref=e194]
+            - blockquote [ref=e196]: "\"Como deportista, necesito recuperación muscular constante. El masaje deportivo aquí es excepcional. Muy recomendado.\""
+            - generic [ref=e197]:
+              - paragraph [ref=e198]: Carlos Rodríguez
+              - paragraph [ref=e199]: Masaje Deportivo
+          - generic [ref=e201]:
+            - generic [ref=e202]:
+              - img [ref=e203]
+              - img [ref=e205]
+              - img [ref=e207]
+              - img [ref=e209]
+              - img [ref=e211]
+            - blockquote [ref=e213]: "\"El masaje de piedras calientes fue una experiencia única. Me sentí completamente renovada. Definitivamente volveré.\""
+            - generic [ref=e214]:
+              - paragraph [ref=e215]: Ana Martínez
+              - paragraph [ref=e216]: Piedras Calientes
+          - generic [ref=e218]:
+            - generic [ref=e219]:
+              - img [ref=e220]
+              - img [ref=e222]
+              - img [ref=e224]
+              - img [ref=e226]
+              - img [ref=e228]
+            - blockquote [ref=e230]: "\"Excelente atención y profesionalismo. El masaje relajante fue justo lo que necesitaba después de una semana estresante.\""
+            - generic [ref=e231]:
+              - paragraph [ref=e232]: Luis Fernández
+              - paragraph [ref=e233]: Masaje Relajante
+        - generic [ref=e235]:
+          - generic [ref=e236]:
+            - generic [ref=e237]: 500+
+            - generic [ref=e238]: Clientes Satisfechos
+          - generic [ref=e239]:
+            - generic [ref=e240]: 10+
+            - generic [ref=e241]: Años de Experiencia
+          - generic [ref=e242]:
+            - generic [ref=e243]: "4.9"
+            - generic [ref=e244]: Calificación Promedio
+          - generic [ref=e245]:
+            - generic [ref=e246]: 100%
+            - generic [ref=e247]: Profesionales Certificados
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - heading "Preguntas Frecuentes" [level=2] [ref=e251]
+          - paragraph [ref=e252]: Resolvemos las dudas más comunes sobre nuestros servicios de masajes para que tengas toda la información que necesitas.
+        - generic [ref=e253]:
+          - button "¿Qué tipos de masajes ofrecen?" [ref=e255]:
+            - generic [ref=e256]:
+              - heading "¿Qué tipos de masajes ofrecen?" [level=3] [ref=e257]
+              - img [ref=e258]
+          - button "¿Necesito experiencia previa para recibir un masaje?" [ref=e261]:
+            - generic [ref=e262]:
+              - heading "¿Necesito experiencia previa para recibir un masaje?" [level=3] [ref=e263]
+              - img [ref=e264]
+          - button "¿Cuánto tiempo duran las sesiones?" [ref=e267]:
+            - generic [ref=e268]:
+              - heading "¿Cuánto tiempo duran las sesiones?" [level=3] [ref=e269]
+              - img [ref=e270]
+          - button "¿Puedo reservar online?" [ref=e273]:
+            - generic [ref=e274]:
+              - heading "¿Puedo reservar online?" [level=3] [ref=e275]
+              - img [ref=e276]
+          - button "¿Qué debo traer a mi cita?" [ref=e279]:
+            - generic [ref=e280]:
+              - heading "¿Qué debo traer a mi cita?" [level=3] [ref=e281]
+              - img [ref=e282]
+          - button "¿Cuál es su política de cancelación?" [ref=e285]:
+            - generic [ref=e286]:
+              - heading "¿Cuál es su política de cancelación?" [level=3] [ref=e287]
+              - img [ref=e288]
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - heading "Visítanos o Contáctanos" [level=2] [ref=e293]
+          - paragraph [ref=e294]: Estamos ubicados en el corazón de la ciudad, fácil acceso y estacionamiento disponible. ¡Te esperamos!
+        - generic [ref=e295]:
+          - generic [ref=e296]:
+            - generic [ref=e297]:
+              - heading "Dirección" [level=3] [ref=e299]:
+                - img [ref=e300]
+                - text: Dirección
+              - generic [ref=e304]:
+                - text: Calle Principal 123
+                - text: Centro de la Ciudad
+                - text: Ciudad, País 12345
+            - generic [ref=e305]:
+              - heading "Teléfono" [level=3] [ref=e307]:
+                - img [ref=e308]
+                - text: Teléfono
+              - link "+1 (234) 567-890" [ref=e311] [cursor=pointer]:
+                - /url: tel:+1234567890
+            - generic [ref=e312]:
+              - heading "Horarios de Atención" [level=3] [ref=e314]:
+                - img [ref=e315]
+                - text: Horarios de Atención
+              - generic [ref=e318]:
+                - generic [ref=e319]:
+                  - generic [ref=e320]: "Lunes - Viernes:"
+                  - generic [ref=e321]: 9:00 - 18:00
+                - generic [ref=e322]:
+                  - generic [ref=e323]: "Sábados:"
+                  - generic [ref=e324]: 10:00 - 16:00
+                - generic [ref=e325]:
+                  - generic [ref=e326]: "Domingos:"
+                  - generic [ref=e327]: Cerrado
+            - generic [ref=e328]:
+              - link "📅 Reservar Cita" [ref=e329] [cursor=pointer]:
+                - /url: /reservas
+              - link "💬 Enviar Mensaje" [ref=e330] [cursor=pointer]:
+                - /url: /contacto
+          - generic [ref=e332]:
+            - img [ref=e333]
+            - paragraph [ref=e336]: Mapa Interactivo
+            - paragraph [ref=e337]: Próximamente disponible
+      - generic [ref=e339]:
+        - heading "Comienza Tu Viaje Hacia el Bienestar" [level=2] [ref=e340]
+        - paragraph [ref=e341]: No esperes más para cuidar de ti mismo. Reserva tu primera sesión y descubre por qué somos la elección preferida para el bienestar y la relajación.
+        - generic [ref=e342]:
+          - link "🎯 Reservar Primera Cita" [ref=e343] [cursor=pointer]:
+            - /url: /reservas
+          - link "📞 Llamar Ahora" [ref=e344] [cursor=pointer]:
+            - /url: tel:+1234567890
+  - contentinfo [ref=e345]:
+    - generic [ref=e346]:
+      - generic [ref=e347]:
+        - generic [ref=e348]:
+          - generic [ref=e349]:
+            - img [ref=e351]
+            - generic [ref=e353]: Spa & Masajes Relajación
+          - paragraph [ref=e354]: Ofrecemos servicios profesionales de masajes terapéuticos y relajantes en un ambiente tranquilo y acogedor. Tu bienestar es nuestra prioridad.
+          - generic [ref=e355]:
+            - link [ref=e356] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e357] [cursor=pointer]
+            - link [ref=e359] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e360] [cursor=pointer]
+            - link [ref=e362] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e363] [cursor=pointer]
+        - generic [ref=e365]:
+          - heading "Enlaces Rápidos" [level=3] [ref=e366]
+          - list [ref=e367]:
+            - listitem [ref=e368]:
+              - link "Nuestros Servicios" [ref=e369] [cursor=pointer]:
+                - /url: /servicios
+            - listitem [ref=e370]:
+              - link "Hacer Reserva" [ref=e371] [cursor=pointer]:
+                - /url: /reservas
+            - listitem [ref=e372]:
+              - link "Contacto" [ref=e373] [cursor=pointer]:
+                - /url: /contacto
+            - listitem [ref=e374]:
+              - link "Área Administrativa" [ref=e375] [cursor=pointer]:
+                - /url: /admin
+        - generic [ref=e376]:
+          - heading "Contacto" [level=3] [ref=e377]
+          - generic [ref=e378]:
+            - paragraph [ref=e379]:
+              - img [ref=e380]
+              - text: Calle Principal 123, Ciudad
+            - paragraph [ref=e383]:
+              - img [ref=e384]
+              - text: +1 (234) 567-890
+            - paragraph [ref=e386]:
+              - img [ref=e387]
+              - text: info@tumasajes.com
+            - generic [ref=e389]:
+              - paragraph [ref=e390]: "Horarios:"
+              - paragraph [ref=e391]: "Lun - Vie: 9:00 - 18:00"
+              - paragraph [ref=e392]: "Sábado: 10:00 - 16:00"
+              - paragraph [ref=e393]: "Domingo: Cerrado"
+      - paragraph [ref=e395]: © 2024 Spa & Masajes Relajación. Todos los derechos reservados.
+  - alert [ref=e396]
+```

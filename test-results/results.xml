@@ -1,0 +1,1797 @@
+<testsuites id="" name="" tests="45" failures="40" skipped="0" errors="0" time="158.626383">
+<testsuite name="landing-page.spec.ts" timestamp="2025-09-14T23:00:21.649Z" hostname="chromium" tests="9" failures="8" skipped="0" time="109.316" errors="0">
+<testcase name="Landing Page › has correct title and meta description" classname="landing-page.spec.ts" time="4.568">
+</testcase>
+<testcase name="Landing Page › displays hero section with call-to-action" classname="landing-page.spec.ts" time="10.975">
+<failure message="landing-page.spec.ts:15:7 displays hero section with call-to-action" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:15:7 › Landing Page › displays hero section with call-to-action 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      16 |     // Check hero section is visible
+      17 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 18 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      19 |     
+      20 |     // Check main heading
+      21 |     const mainHeading = page.locator('h1')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:18:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays services preview section" classname="landing-page.spec.ts" time="11.105">
+<failure message="landing-page.spec.ts:31:7 displays services preview section" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:31:7 › Landing Page › displays services preview section ────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="services-preview"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="services-preview"]')
+
+
+      31 |   test('displays services preview section', async ({ page }) => {
+      32 |     const servicesSection = page.locator('[data-testid="services-preview"]')
+    > 33 |     await expect(servicesSection).toBeVisible()
+         |                                   ^
+      34 |     
+      35 |     // Check section heading
+      36 |     const sectionHeading = page.locator('h2').filter({ hasText: /servicios/i })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:33:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays contact information" classname="landing-page.spec.ts" time="11.167">
+<failure message="landing-page.spec.ts:44:7 displays contact information" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:44:7 › Landing Page › displays contact information ─────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="contact-info"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="contact-info"]')
+
+
+      44 |   test('displays contact information', async ({ page }) => {
+      45 |     const contactSection = page.locator('[data-testid="contact-info"]')
+    > 46 |     await expect(contactSection).toBeVisible()
+         |                                  ^
+      47 |     
+      48 |     // Check phone number is displayed
+      49 |     const phoneNumber = page.locator('[data-testid="phone-number"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:46:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-contact-information-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › navigation works correctly" classname="landing-page.spec.ts" time="11.17">
+<failure message="landing-page.spec.ts:61:7 navigation works correctly" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:61:7 › Landing Page › navigation works correctly ───────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="main-navigation"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="main-navigation"]')
+
+
+      62 |     // Check navigation menu is visible
+      63 |     const navigation = page.locator('[data-testid="main-navigation"]')
+    > 64 |     await expect(navigation).toBeVisible()
+         |                              ^
+      65 |     
+      66 |     // Test navigation links
+      67 |     const servicesLink = page.locator('a[href="/servicios"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:64:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › CTA button navigates to booking page" classname="landing-page.spec.ts" time="30.59">
+<failure message="landing-page.spec.ts:77:7 CTA button navigates to booking page" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:77:7 › Landing Page › CTA button navigates to booking page ─────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="cta-button"]')
+
+
+      77 |   test('CTA button navigates to booking page', async ({ page }) => {
+      78 |     const ctaButton = page.locator('[data-testid="cta-button"]')
+    > 79 |     await ctaButton.click()
+         |                     ^
+      80 |     
+      81 |     await expect(page).toHaveURL('/reservas')
+      82 |   })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:79:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › is responsive on mobile devices" classname="landing-page.spec.ts" time="13.474">
+<failure message="landing-page.spec.ts:84:7 is responsive on mobile devices" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:84:7 › Landing Page › is responsive on mobile devices ──────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      88 |     // Check hero section is still visible
+      89 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 90 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      91 |     
+      92 |     // Check mobile navigation menu
+      93 |     const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:90:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › has proper accessibility attributes" classname="landing-page.spec.ts" time="6.223">
+<failure message="landing-page.spec.ts:102:7 has proper accessibility attributes" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:102:7 › Landing Page › has proper accessibility attributes ─────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: null
+
+      127 |       const hasAriaLabel = await link.getAttribute('aria-label')
+      128 |       
+    > 129 |       expect(hasText || hasAriaLabel).toBeTruthy()
+          |                                       ^
+      130 |     }
+      131 |   })
+      132 |
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:129:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › loads performance optimized images" classname="landing-page.spec.ts" time="10.044">
+<failure message="landing-page.spec.ts:133:7 loads performance optimized images" type="FAILURE">
+<![CDATA[  [chromium] › landing-page.spec.ts:133:7 › Landing Page › loads performance optimized images ──────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('img[loading="lazy"]').first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[loading="lazy"]').first()
+
+
+      134 |     // Check that images are lazy loaded
+      135 |     const images = page.locator('img[loading="lazy"]')
+    > 136 |     await expect(images.first()).toBeVisible()
+          |                                  ^
+      137 |     
+      138 |     // Check that images have proper sizes
+      139 |     const responsiveImages = page.locator('img[sizes]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:136:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-chromium\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="landing-page.spec.ts" timestamp="2025-09-14T23:00:21.649Z" hostname="firefox" tests="9" failures="8" skipped="0" time="156.155" errors="0">
+<testcase name="Landing Page › has correct title and meta description" classname="landing-page.spec.ts" time="11.49">
+</testcase>
+<testcase name="Landing Page › displays hero section with call-to-action" classname="landing-page.spec.ts" time="15.909">
+<failure message="landing-page.spec.ts:15:7 displays hero section with call-to-action" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:15:7 › Landing Page › displays hero section with call-to-action ─
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      16 |     // Check hero section is visible
+      17 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 18 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      19 |     
+      20 |     // Check main heading
+      21 |     const mainHeading = page.locator('h1')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:18:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays services preview section" classname="landing-page.spec.ts" time="16.134">
+<failure message="landing-page.spec.ts:31:7 displays services preview section" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:31:7 › Landing Page › displays services preview section ─────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="services-preview"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="services-preview"]')
+
+
+      31 |   test('displays services preview section', async ({ page }) => {
+      32 |     const servicesSection = page.locator('[data-testid="services-preview"]')
+    > 33 |     await expect(servicesSection).toBeVisible()
+         |                                   ^
+      34 |     
+      35 |     // Check section heading
+      36 |     const sectionHeading = page.locator('h2').filter({ hasText: /servicios/i })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:33:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays contact information" classname="landing-page.spec.ts" time="18.474">
+<failure message="landing-page.spec.ts:44:7 displays contact information" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:44:7 › Landing Page › displays contact information ──────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="contact-info"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="contact-info"]')
+
+
+      44 |   test('displays contact information', async ({ page }) => {
+      45 |     const contactSection = page.locator('[data-testid="contact-info"]')
+    > 46 |     await expect(contactSection).toBeVisible()
+         |                                  ^
+      47 |     
+      48 |     // Check phone number is displayed
+      49 |     const phoneNumber = page.locator('[data-testid="phone-number"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:46:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-contact-information-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › navigation works correctly" classname="landing-page.spec.ts" time="17.819">
+<failure message="landing-page.spec.ts:61:7 navigation works correctly" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:61:7 › Landing Page › navigation works correctly ────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="main-navigation"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="main-navigation"]')
+
+
+      62 |     // Check navigation menu is visible
+      63 |     const navigation = page.locator('[data-testid="main-navigation"]')
+    > 64 |     await expect(navigation).toBeVisible()
+         |                              ^
+      65 |     
+      66 |     // Test navigation links
+      67 |     const servicesLink = page.locator('a[href="/servicios"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:64:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › CTA button navigates to booking page" classname="landing-page.spec.ts" time="30.648">
+<failure message="landing-page.spec.ts:77:7 CTA button navigates to booking page" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:77:7 › Landing Page › CTA button navigates to booking page ──────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="cta-button"]')
+
+
+      77 |   test('CTA button navigates to booking page', async ({ page }) => {
+      78 |     const ctaButton = page.locator('[data-testid="cta-button"]')
+    > 79 |     await ctaButton.click()
+         |                     ^
+      80 |     
+      81 |     await expect(page).toHaveURL('/reservas')
+      82 |   })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:79:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › is responsive on mobile devices" classname="landing-page.spec.ts" time="19.595">
+<failure message="landing-page.spec.ts:84:7 is responsive on mobile devices" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:84:7 › Landing Page › is responsive on mobile devices ───────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      88 |     // Check hero section is still visible
+      89 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 90 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      91 |     
+      92 |     // Check mobile navigation menu
+      93 |     const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:90:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › has proper accessibility attributes" classname="landing-page.spec.ts" time="12.877">
+<failure message="landing-page.spec.ts:102:7 has proper accessibility attributes" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:102:7 › Landing Page › has proper accessibility attributes ──────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: null
+
+      127 |       const hasAriaLabel = await link.getAttribute('aria-label')
+      128 |       
+    > 129 |       expect(hasText || hasAriaLabel).toBeTruthy()
+          |                                       ^
+      130 |     }
+      131 |   })
+      132 |
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:129:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › loads performance optimized images" classname="landing-page.spec.ts" time="13.209">
+<failure message="landing-page.spec.ts:133:7 loads performance optimized images" type="FAILURE">
+<![CDATA[  [firefox] › landing-page.spec.ts:133:7 › Landing Page › loads performance optimized images ───────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('img[loading="lazy"]').first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[loading="lazy"]').first()
+
+
+      134 |     // Check that images are lazy loaded
+      135 |     const images = page.locator('img[loading="lazy"]')
+    > 136 |     await expect(images.first()).toBeVisible()
+          |                                  ^
+      137 |     
+      138 |     // Check that images have proper sizes
+      139 |     const responsiveImages = page.locator('img[sizes]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:136:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-firefox\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="landing-page.spec.ts" timestamp="2025-09-14T23:00:21.649Z" hostname="webkit" tests="9" failures="8" skipped="0" time="141.658" errors="0">
+<testcase name="Landing Page › has correct title and meta description" classname="landing-page.spec.ts" time="5.569">
+</testcase>
+<testcase name="Landing Page › displays hero section with call-to-action" classname="landing-page.spec.ts" time="9.516">
+<failure message="landing-page.spec.ts:15:7 displays hero section with call-to-action" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:15:7 › Landing Page › displays hero section with call-to-action ──
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      16 |     // Check hero section is visible
+      17 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 18 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      19 |     
+      20 |     // Check main heading
+      21 |     const mainHeading = page.locator('h1')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:18:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays services preview section" classname="landing-page.spec.ts" time="10.395">
+<failure message="landing-page.spec.ts:31:7 displays services preview section" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:31:7 › Landing Page › displays services preview section ──────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="services-preview"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="services-preview"]')
+
+
+      31 |   test('displays services preview section', async ({ page }) => {
+      32 |     const servicesSection = page.locator('[data-testid="services-preview"]')
+    > 33 |     await expect(servicesSection).toBeVisible()
+         |                                   ^
+      34 |     
+      35 |     // Check section heading
+      36 |     const sectionHeading = page.locator('h2').filter({ hasText: /servicios/i })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:33:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays contact information" classname="landing-page.spec.ts" time="15.199">
+<failure message="landing-page.spec.ts:44:7 displays contact information" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:44:7 › Landing Page › displays contact information ───────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="contact-info"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="contact-info"]')
+
+
+      44 |   test('displays contact information', async ({ page }) => {
+      45 |     const contactSection = page.locator('[data-testid="contact-info"]')
+    > 46 |     await expect(contactSection).toBeVisible()
+         |                                  ^
+      47 |     
+      48 |     // Check phone number is displayed
+      49 |     const phoneNumber = page.locator('[data-testid="phone-number"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:46:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-contact-information-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › navigation works correctly" classname="landing-page.spec.ts" time="14.91">
+<failure message="landing-page.spec.ts:61:7 navigation works correctly" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:61:7 › Landing Page › navigation works correctly ─────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="main-navigation"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="main-navigation"]')
+
+
+      62 |     // Check navigation menu is visible
+      63 |     const navigation = page.locator('[data-testid="main-navigation"]')
+    > 64 |     await expect(navigation).toBeVisible()
+         |                              ^
+      65 |     
+      66 |     // Test navigation links
+      67 |     const servicesLink = page.locator('a[href="/servicios"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:64:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › CTA button navigates to booking page" classname="landing-page.spec.ts" time="30.859">
+<failure message="landing-page.spec.ts:77:7 CTA button navigates to booking page" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:77:7 › Landing Page › CTA button navigates to booking page ───────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="cta-button"]')
+
+
+      77 |   test('CTA button navigates to booking page', async ({ page }) => {
+      78 |     const ctaButton = page.locator('[data-testid="cta-button"]')
+    > 79 |     await ctaButton.click()
+         |                     ^
+      80 |     
+      81 |     await expect(page).toHaveURL('/reservas')
+      82 |   })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:79:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › is responsive on mobile devices" classname="landing-page.spec.ts" time="17.958">
+<failure message="landing-page.spec.ts:84:7 is responsive on mobile devices" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:84:7 › Landing Page › is responsive on mobile devices ────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      88 |     // Check hero section is still visible
+      89 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 90 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      91 |     
+      92 |     // Check mobile navigation menu
+      93 |     const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:90:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › has proper accessibility attributes" classname="landing-page.spec.ts" time="17.007">
+<failure message="landing-page.spec.ts:102:7 has proper accessibility attributes" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:102:7 › Landing Page › has proper accessibility attributes ───────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: null
+
+      127 |       const hasAriaLabel = await link.getAttribute('aria-label')
+      128 |       
+    > 129 |       expect(hasText || hasAriaLabel).toBeTruthy()
+          |                                       ^
+      130 |     }
+      131 |   })
+      132 |
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:129:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › loads performance optimized images" classname="landing-page.spec.ts" time="20.245">
+<failure message="landing-page.spec.ts:133:7 loads performance optimized images" type="FAILURE">
+<![CDATA[  [webkit] › landing-page.spec.ts:133:7 › Landing Page › loads performance optimized images ────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('img[loading="lazy"]').first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[loading="lazy"]').first()
+
+
+      134 |     // Check that images are lazy loaded
+      135 |     const images = page.locator('img[loading="lazy"]')
+    > 136 |     await expect(images.first()).toBeVisible()
+          |                                  ^
+      137 |     
+      138 |     // Check that images have proper sizes
+      139 |     const responsiveImages = page.locator('img[sizes]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:136:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-webkit\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="landing-page.spec.ts" timestamp="2025-09-14T23:00:21.649Z" hostname="Mobile Chrome" tests="9" failures="8" skipped="0" time="148.688" errors="0">
+<testcase name="Landing Page › has correct title and meta description" classname="landing-page.spec.ts" time="13.94">
+</testcase>
+<testcase name="Landing Page › displays hero section with call-to-action" classname="landing-page.spec.ts" time="18.504">
+<failure message="landing-page.spec.ts:15:7 displays hero section with call-to-action" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:15:7 › Landing Page › displays hero section with call-to-action 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      16 |     // Check hero section is visible
+      17 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 18 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      19 |     
+      20 |     // Check main heading
+      21 |     const mainHeading = page.locator('h1')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:18:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays services preview section" classname="landing-page.spec.ts" time="14.858">
+<failure message="landing-page.spec.ts:31:7 displays services preview section" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:31:7 › Landing Page › displays services preview section ───
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="services-preview"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="services-preview"]')
+
+
+      31 |   test('displays services preview section', async ({ page }) => {
+      32 |     const servicesSection = page.locator('[data-testid="services-preview"]')
+    > 33 |     await expect(servicesSection).toBeVisible()
+         |                                   ^
+      34 |     
+      35 |     // Check section heading
+      36 |     const sectionHeading = page.locator('h2').filter({ hasText: /servicios/i })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:33:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays contact information" classname="landing-page.spec.ts" time="14.419">
+<failure message="landing-page.spec.ts:44:7 displays contact information" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:44:7 › Landing Page › displays contact information ────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="contact-info"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="contact-info"]')
+
+
+      44 |   test('displays contact information', async ({ page }) => {
+      45 |     const contactSection = page.locator('[data-testid="contact-info"]')
+    > 46 |     await expect(contactSection).toBeVisible()
+         |                                  ^
+      47 |     
+      48 |     // Check phone number is displayed
+      49 |     const phoneNumber = page.locator('[data-testid="phone-number"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:46:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-contact-information-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › navigation works correctly" classname="landing-page.spec.ts" time="14.115">
+<failure message="landing-page.spec.ts:61:7 navigation works correctly" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:61:7 › Landing Page › navigation works correctly ──────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="main-navigation"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="main-navigation"]')
+
+
+      62 |     // Check navigation menu is visible
+      63 |     const navigation = page.locator('[data-testid="main-navigation"]')
+    > 64 |     await expect(navigation).toBeVisible()
+         |                              ^
+      65 |     
+      66 |     // Test navigation links
+      67 |     const servicesLink = page.locator('a[href="/servicios"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:64:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › CTA button navigates to booking page" classname="landing-page.spec.ts" time="31.065">
+<failure message="landing-page.spec.ts:77:7 CTA button navigates to booking page" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:77:7 › Landing Page › CTA button navigates to booking page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="cta-button"]')
+
+
+      77 |   test('CTA button navigates to booking page', async ({ page }) => {
+      78 |     const ctaButton = page.locator('[data-testid="cta-button"]')
+    > 79 |     await ctaButton.click()
+         |                     ^
+      80 |     
+      81 |     await expect(page).toHaveURL('/reservas')
+      82 |   })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:79:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › is responsive on mobile devices" classname="landing-page.spec.ts" time="16.533">
+<failure message="landing-page.spec.ts:84:7 is responsive on mobile devices" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:84:7 › Landing Page › is responsive on mobile devices ─────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      88 |     // Check hero section is still visible
+      89 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 90 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      91 |     
+      92 |     // Check mobile navigation menu
+      93 |     const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:90:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › has proper accessibility attributes" classname="landing-page.spec.ts" time="10.627">
+<failure message="landing-page.spec.ts:102:7 has proper accessibility attributes" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:102:7 › Landing Page › has proper accessibility attributes 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: null
+
+      127 |       const hasAriaLabel = await link.getAttribute('aria-label')
+      128 |       
+    > 129 |       expect(hasText || hasAriaLabel).toBeTruthy()
+          |                                       ^
+      130 |     }
+      131 |   })
+      132 |
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:129:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › loads performance optimized images" classname="landing-page.spec.ts" time="14.627">
+<failure message="landing-page.spec.ts:133:7 loads performance optimized images" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › landing-page.spec.ts:133:7 › Landing Page › loads performance optimized images ─
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('img[loading="lazy"]').first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[loading="lazy"]').first()
+
+
+      134 |     // Check that images are lazy loaded
+      135 |     const images = page.locator('img[loading="lazy"]')
+    > 136 |     await expect(images.first()).toBeVisible()
+          |                                  ^
+      137 |     
+      138 |     // Check that images have proper sizes
+      139 |     const responsiveImages = page.locator('img[sizes]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:136:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="landing-page.spec.ts" timestamp="2025-09-14T23:00:21.649Z" hostname="Mobile Safari" tests="9" failures="8" skipped="0" time="151.899" errors="0">
+<testcase name="Landing Page › has correct title and meta description" classname="landing-page.spec.ts" time="9.77">
+</testcase>
+<testcase name="Landing Page › displays hero section with call-to-action" classname="landing-page.spec.ts" time="14.208">
+<failure message="landing-page.spec.ts:15:7 displays hero section with call-to-action" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:15:7 › Landing Page › displays hero section with call-to-action 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      16 |     // Check hero section is visible
+      17 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 18 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      19 |     
+      20 |     // Check main heading
+      21 |     const mainHeading = page.locator('h1')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:18:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--78037-section-with-call-to-action-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays services preview section" classname="landing-page.spec.ts" time="17.009">
+<failure message="landing-page.spec.ts:31:7 displays services preview section" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:31:7 › Landing Page › displays services preview section ───
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="services-preview"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="services-preview"]')
+
+
+      31 |   test('displays services preview section', async ({ page }) => {
+      32 |     const servicesSection = page.locator('[data-testid="services-preview"]')
+    > 33 |     await expect(servicesSection).toBeVisible()
+         |                                   ^
+      34 |     
+      35 |     // Check section heading
+      36 |     const sectionHeading = page.locator('h2').filter({ hasText: /servicios/i })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:33:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-services-preview-section-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-services-preview-section-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › displays contact information" classname="landing-page.spec.ts" time="19.894">
+<failure message="landing-page.spec.ts:44:7 displays contact information" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:44:7 › Landing Page › displays contact information ────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="contact-info"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="contact-info"]')
+
+
+      44 |   test('displays contact information', async ({ page }) => {
+      45 |     const contactSection = page.locator('[data-testid="contact-info"]')
+    > 46 |     await expect(contactSection).toBeVisible()
+         |                                  ^
+      47 |     
+      48 |     // Check phone number is displayed
+      49 |     const phoneNumber = page.locator('[data-testid="phone-number"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:46:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-displays-contact-information-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-displays-contact-information-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-displays-contact-information-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › navigation works correctly" classname="landing-page.spec.ts" time="17.049">
+<failure message="landing-page.spec.ts:61:7 navigation works correctly" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:61:7 › Landing Page › navigation works correctly ──────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="main-navigation"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="main-navigation"]')
+
+
+      62 |     // Check navigation menu is visible
+      63 |     const navigation = page.locator('[data-testid="main-navigation"]')
+    > 64 |     await expect(navigation).toBeVisible()
+         |                              ^
+      65 |     
+      66 |     // Test navigation links
+      67 |     const servicesLink = page.locator('a[href="/servicios"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:64:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-navigation-works-correctly-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-navigation-works-correctly-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › CTA button navigates to booking page" classname="landing-page.spec.ts" time="30.222">
+<failure message="landing-page.spec.ts:77:7 CTA button navigates to booking page" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:77:7 › Landing Page › CTA button navigates to booking page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="cta-button"]')
+
+
+      77 |   test('CTA button navigates to booking page', async ({ page }) => {
+      78 |     const ctaButton = page.locator('[data-testid="cta-button"]')
+    > 79 |     await ctaButton.click()
+         |                     ^
+      80 |     
+      81 |     await expect(page).toHaveURL('/reservas')
+      82 |   })
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:79:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--1364b-n-navigates-to-booking-page-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › is responsive on mobile devices" classname="landing-page.spec.ts" time="17.235">
+<failure message="landing-page.spec.ts:84:7 is responsive on mobile devices" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:84:7 › Landing Page › is responsive on mobile devices ─────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hero-section"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hero-section"]')
+
+
+      88 |     // Check hero section is still visible
+      89 |     const heroSection = page.locator('[data-testid="hero-section"]')
+    > 90 |     await expect(heroSection).toBeVisible()
+         |                               ^
+      91 |     
+      92 |     // Check mobile navigation menu
+      93 |     const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:90:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-is-responsive-on-mobile-devices-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › has proper accessibility attributes" classname="landing-page.spec.ts" time="12.432">
+<failure message="landing-page.spec.ts:102:7 has proper accessibility attributes" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:102:7 › Landing Page › has proper accessibility attributes 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: null
+
+      127 |       const hasAriaLabel = await link.getAttribute('aria-label')
+      128 |       
+    > 129 |       expect(hasText || hasAriaLabel).toBeTruthy()
+          |                                       ^
+      130 |     }
+      131 |   })
+      132 |
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:129:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page--763d7-er-accessibility-attributes-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Landing Page › loads performance optimized images" classname="landing-page.spec.ts" time="14.08">
+<failure message="landing-page.spec.ts:133:7 loads performance optimized images" type="FAILURE">
+<![CDATA[  [Mobile Safari] › landing-page.spec.ts:133:7 › Landing Page › loads performance optimized images ─
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('img[loading="lazy"]').first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[loading="lazy"]').first()
+
+
+      134 |     // Check that images are lazy loaded
+      135 |     const images = page.locator('img[loading="lazy"]')
+    > 136 |     await expect(images.first()).toBeVisible()
+          |                                  ^
+      137 |     
+      138 |     // Check that images have proper sizes
+      139 |     const responsiveImages = page.locator('img[sizes]')
+        at D:\proyectosGIT\Masajes\sitio-masajes\tests\e2e\landing-page.spec.ts:136:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|landing-page-Landing-Page-loads-performance-optimized-images-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
