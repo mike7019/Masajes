@@ -17,10 +17,10 @@ export const handlers = [
   }),
 
   http.post('/api/reservas', async ({ request }) => {
-    const data = await request.json()
+    const data = await request.json() as Record<string, any>
     return HttpResponse.json({
       ...mockReserva,
-      ...data,
+      ...(data as object),
       id: 'new-reservation-id',
     }, { status: 201 })
   }),
@@ -30,10 +30,10 @@ export const handlers = [
   }),
 
   http.put('/api/reservas/:id', async ({ params, request }) => {
-    const data = await request.json()
+    const data = await request.json() as Record<string, any>
     return HttpResponse.json({
       ...mockReserva,
-      ...data,
+      ...(data as object),
       id: params.id,
     })
   }),
@@ -48,10 +48,10 @@ export const handlers = [
   }),
 
   http.post('/api/disponibilidad', async ({ request }) => {
-    const data = await request.json()
+    const data = await request.json() as Record<string, any>
     return HttpResponse.json({
       ...mockDisponibilidad,
-      ...data,
+      ...(data as object),
       id: 'new-availability-id',
     }, { status: 201 })
   }),
@@ -88,8 +88,8 @@ export const handlers = [
 
   // Auth API
   http.post('/api/auth/signin', async ({ request }) => {
-    const data = await request.json()
-    if (data.email === 'admin@test.com' && data.password === 'password') {
+    const data = await request.json() as { email?: string; password?: string } | null
+    if (data?.email === 'admin@test.com' && data?.password === 'password') {
       return HttpResponse.json({
         user: {
           id: '1',

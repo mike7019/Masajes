@@ -1,6 +1,7 @@
 import { render, RenderOptions } from '@testing-library/react'
 import { ReactElement } from 'react'
 import { SessionProvider } from 'next-auth/react'
+import React from 'react'
 
 // Mock session data
 export const mockSession = {
@@ -23,10 +24,11 @@ export function renderWithProviders(
   { session = null, ...renderOptions }: CustomRenderOptions = {}
 ) {
   function Wrapper({ children }: { children: React.ReactNode }) {
+    const Provider = SessionProvider as any
     return (
-      <SessionProvider session={session}>
+      <Provider session={session}>
         {children}
-      </SessionProvider>
+      </Provider>
     )
   }
 

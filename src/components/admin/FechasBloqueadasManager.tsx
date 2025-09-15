@@ -1,12 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/Button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
+import { Input } from '@/components/ui/Input'
+import { Badge } from '@/components/ui/Badge'
+import { Textarea } from '@/components/ui/Textarea'
 import { Label } from '@/components/ui/label'
-import { Textarea } from '@/components/ui/textarea'
-import { Badge } from '@/components/ui/badge'
 import { useToast } from '@/components/ui/Toast'
 import { format, parseISO } from 'date-fns'
 import { es } from 'date-fns/locale'
@@ -139,7 +139,10 @@ export function FechasBloqueadasManager() {
       }
     } catch (error) {
       console.error('Error:', error)
-      toast.error('Error al eliminar el bloqueo')
+      addToast({
+        type: 'error',
+        message: 'Error al eliminar el bloqueo'
+      })
     }
   }
 
